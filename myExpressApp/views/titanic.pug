@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    p Titanic Passengers
+    p Passengers/Crew Returned: #{passengers.length}
+    p Total number of dead: #{dead}
+    p Total number of survivors: #{alive}
+    table
+        tr
+            each th in headers
+                th= th
+
+        each passenger in passengers
+            tr
+                td #{passenger.lastName}, #{passenger.firstName}
+                td= passenger.firstName
+                td= passenger.age
+                td= passenger.passengerClass
+                td= passenger.passengerCrew
+                td= passenger.role
+                td= passenger.survivor

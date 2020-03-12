@@ -1,0 +1,11 @@
+let phrase = "Now is the time for all good programmers to come to the aid of their code";
+let name = "Jacob Jinglehimer Schmit";
+shortString = "This is a simple sentence";
+let firstSpace = name.indexOf(" ");  
+console.log(firstSpace);
+let nextSpace = name.indexOf( " ", firstSpace+1);
+console.log(nextSpace);
+let middleName = name.substr(firstSpace +1, nextSpace -firstSpace );
+console.log(middleName);
+let midString = shortString.substr(shortString.length/2,1); 
+console.log(midString);

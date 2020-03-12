@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+  a(href='/users/list') Users
+  br
+  p Hello, my name is #{name}
+  hr
+  p My address is #{address}
+  p My favorite color is #{color}
+  p I have #{members} members in my family
+  p My date of birth #{dob}
+  p Today's date is #{date}
+  p The time now is #{time}
+  hr
+  table 
+    tr 
+      th class ID
+      th course description
+    tr 
+      td SD 105
+      td JavaScript 

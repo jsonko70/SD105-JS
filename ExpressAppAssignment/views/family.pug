@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  br
+  h2 #{subTitle}
+  hr
+  h3 My wife is #{wife}
+  h4 Children:
+  p 1st child is #{firstChild} born on #{dob1}
+  p 2nd child is #{secondChild} born on #{dob2}
+  p 3rd child #{thirdChild} born on #{dob3}
+  p 4th child #{fourthChild} born on #{dob4}
+  br
+  hr
+  a(href='/') Home
